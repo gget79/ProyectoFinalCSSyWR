@@ -1,0 +1,50 @@
+header{
+  background-color:  #5b7989;
+  border-radius: 10px;
+}
+
+header h1{
+  text-align: left;
+  color: white;
+  text-shadow: 2px 2px 2px #02010a;
+}
+
+.contenedor{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.imagenCentral
+{
+  float:none;
+  width: 1%;
+  height: 1%;
+}
+.imagenSecundariaIzquierda{
+  float:left;
+  width: 1%;
+  height: 1%;
+}
+.imagenSecundariaDerecha{
+  float:right;
+  width: 1%;
+  height: 1%;
+}
+/*Media queries*/
+/*Resolución para PCs*/
+@media (min-width:721px){
+  header nav{
+    text-align: right;
+  }
+  header nav a{
+    text-decoration: none;
+  }
+
+}
+
+/*Resolución inferio a PCs*/
+@media (max-width:720px){
+  header nav{
+    display:none;
+  }
+}
